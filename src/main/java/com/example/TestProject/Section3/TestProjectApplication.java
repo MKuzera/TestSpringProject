@@ -4,11 +4,8 @@ import com.example.TestProject.Section3.GameLogic.DependenciesInjectionExample;
 import com.example.TestProject.Section3.GameLogic.GameRunner;
 import com.example.TestProject.Section3.BusinessCalculationService.BusinnesCalculationService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-
+import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Component;
 
 
 @Configuration
@@ -19,7 +16,6 @@ public class TestProjectApplication {
 	public String name(){
 		return "co";
 	}
-
 
 
 	public static void main(String[] args) {
